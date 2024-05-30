@@ -9,6 +9,7 @@ using LuxorGraphPlot
 using LuxorGraphPlot: Point
 using LuxorGraphPlot.Luxor: Colors
 using LinearAlgebra
+using DelaunayTriangulation
 import Base.deleteat!
 
 export # types
@@ -21,6 +22,8 @@ export # types
     KagomeLattice,
     GeneralLattice,
     RectangularLattice,
+    VoronoiTesselation,
+    KagomeTesselation,
     # interfaces
     generate_sites,
     deleteat!,
@@ -55,16 +58,16 @@ export # types
     # interact
     two_body_interaction_matrix,
     rydberg_interaction_matrix
-    
 
 
-    
+
+
 include("lattice.jl")
 include("region.jl")
 include("bounded_lattice.jl")
 include("interact.jl")
 include("neighbors.jl")
 include("visualize.jl")
-
+include("amorphous.jl")
 
 end

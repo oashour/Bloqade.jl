@@ -25,6 +25,8 @@ using Reexport
     KagomeLattice,
     GeneralLattice,
     RectangularLattice,
+    VoronoiTesselation,
+    KagomeTesselation,
     AtomList,
     # interfaces
     generate_sites,
